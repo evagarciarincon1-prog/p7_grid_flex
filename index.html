@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paleta de colores</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lima-color: #CCFF02;
+    --gris-color: #8696A8;
+    --violeta-color: #E4D2FC;
+    --rojo-color: #EF432B;
+    --negro-color: #282625;
+    --blanco-color: #EFEAE8;
+    --verde-color: #325444;
+}
+
+.container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+
+    grid-template-columns: 1fr 1fr 0.75fr;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+
+.lime {
+    background-color: var(--lima-color);
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.storm {
+    background-color: var(--gris-color);
+    grid-column: 1;
+    grid-row: 3 / 5;
+}
+
+.violet {
+    background-color: var(--violeta-color);
+    grid-column: 1;
+    grid-row: 5 / 7;
+}
+
+.chilli {
+    background-color: var(--rojo-color);
+    grid-column: 1;
+    grid-row: 7 / 9;
+}
+
+.dark {
+    background-color: var(--negro-color);
+    grid-column: 2;
+    grid-row: 1 / 4;
+}
+
+.light {
+    background-color: var(--blanco-color);
+    grid-column: 2;
+    grid-row: 4 / 9;
+}
+
+.forest {
+    background-color: var(--verde-color);
+    grid-column: 3;
+    grid-row: 1 / 9;
+}
+
+.container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    font-weight: normal;
+}
+
+.forest p {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color:aliceblue;
+}
+.chilli{
+    color:#E4D2FC;
+}
+.dark{
+    color:aliceblue;
+}
+.violet{
+    color:#EF432B;
+}
+.lime{
+    color:#325444;
+}
+.storm{
+    color:antiquewhite;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="lime">
+        <p>LIME</p>
+    </div>
+
+    <div class="storm">
+        <p>STORM</p>
+    </div>
+
+    <div class="violet">
+        <p>VIOLET</p>
+    </div>
+
+    <div class="chilli">
+        <p>CHILLI</p>
+    </div>
+
+    <div class="dark">
+        <p>DARK</p>
+    </div>
+
+    <div class="light">
+        <p>LIGHT & BRIGHT</p>
+    </div>
+
+    <div class="forest">
+        <p>FOREST</p>
+    </div>
+
+</div>
+
+</body>
+</html>
